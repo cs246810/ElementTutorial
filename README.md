@@ -23,4 +23,4 @@
 优化导航后的页面，感觉前端只要学好了html, css, js后面，框架无论怎么变，都不怕的，然后呢，笔者发现这些框架如果不借助node的话，就写讲台页面
 还是会写很多重复的代码。这可能是node存在的原因。这是优化后的，看起来比之前和谐一些。
 
-![](https://github.com/cs246810/ElementTutorial/blob/master/logo.png)
+![](https://github.com/cs246810/ElementTutorial/blob/master/logo.PNG)
