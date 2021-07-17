@@ -1,0 +1,50 @@
+@import url("index.css");
+
+#app {
+  width: 1024px;
+  height: 880px;
+  margin: 20 auto;
+}
+
+.header > span {
+  margin-left: 100px;
+}
+
+.contnet {
+  margin-top: 10px;
+  width: inherit;
+  height: 700px;
+}
+
+
+.button {
+  float: right;
+}
+
+.bottom {
+  width: inherit;
+  margin: 30px auto;
+  line-height: 12px;
+}
+
+h2 {
+  color: rgb(68, 66, 66)
+}
+
+a {
+  color: gray
+}
+
+img {
+ width: 250;
+ margin-left: 60px;
+}
+
+ul {
+  list-style: none;
+  margin-left: 10px;
+}
+
+ul > li {
+  margin-top: 5px;
+}

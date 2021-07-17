@@ -1,0 +1,126 @@
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<script src="vue.global.js"></script>
+
+<!-- 引入样式 -->
+<link rel="stylesheet" href="index.css">
+<!-- 引入组件库 -->
+<script src="index.full.js"></script>
+
+<link rel='stylesheet' href='app.css'>
+
+
+<div id="app">
+    <div class='header'>
+      <h1>Element博客</h1>
+      <span>人类小学二年级就学会了写作，但是却要去做很多其它重要的事。</span>
+    </div>
+
+    <div class='nav'>
+      <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect">
+        <el-menu-item index="1">主页</el-menu-item>
+        <el-submenu index="2">
+          <template #title>编程</template>
+          <el-menu-item index="2-1">Python</el-menu-item>
+          <el-menu-item index="2-2">Linux C</el-menu-item>
+          <el-submenu index="2-3">
+            <template #title>Web</template>
+            <el-menu-item index="2-3-1">Html5</el-menu-item>
+            <el-menu-item index="2-3-2">CSS3</el-menu-item>
+            <el-menu-item index="2-3-3">Javascript</el-menu-item>
+            <el-menu-item index="2-3-4">JQuery</el-menu-item>
+            <el-menu-item index="2-3-5">Vue</el-menu-item>
+            <el-menu-item index="2-3-6">Element</el-menu-item>
+            <el-menu-item index="2-3-6">Echarts</el-menu-item>
+          </el-submenu>
+          <el-submenu index="2-4">
+            <template #title>高等数学</template>
+            <el-menu-item index="2-4-1">极限</el-menu-item>
+            <el-menu-item index="2-4-2">导数</el-menu-item>
+            <el-menu-item index="2-4-3">微积分</el-menu-item>
+          </el-submenu>
+        </el-submenu>
+        <el-menu-item index="3">旅游观光</el-menu-item>
+        <el-menu-item index="4">产品</el-menu-item>
+
+        <el-menu-item index="5">数据</el-menu-item>
+        <el-menu-item index="6"><a href="https://github.com/cs246810" target="_blank">GitHub</a></el-menu-item>
+      </el-menu>
+      <div class="line"></div>
+    </div>
+    <div class='contnet'>
+      <el-row :gutter="20">
+        <el-col :span="16">
+            <div class='articls'>
+              <div>
+                <h2>埃及美女木乃伊</h2>
+                <div>
+                  很多到埃及去看美女木乃伊，据说美女木乃伊已经有7000年历史了，我也去看了，而且感觉身材很好
+                  ，很苗条，听导游说美女木乃伊是在正准备洗澡的时候被做成了木乃伊的。笔者觉得好残忍。据说很多
+                  ，据说我看了那句木乃伊之后，然后自己点燃了一支烟。想了想，感觉简直就是美味，哈哈哈
+                  <a href='#'>...查看</a>
+                </div>
+              </div>
+
+              <div>
+                <h2>去土耳其玩耍</h2>
+                <div>
+                  只有远行才能感觉到自己不孤独，还是说害怕孤独选择远行去寻找更多的人。话说，土耳其的女孩子真的
+                  好开放，到一个卖酒的地方，老板娘是个女汉子，还请我喝了一杯酒，走后，让我感觉非常的不舍
+                  <a href='#'>...查看</a>
+                </div>
+              </div>
+
+              <div>
+                <h2>一次被老板娘暴打的经历</h2>
+                <div>
+                  很久很久以前我和老板去埃及金字塔下面去寻找宝藏，据说是金字塔地下有大量的金银财宝，然后我进去后
+                  发现，只是一个很深的地洞，老板娘说很累，说下去的路太长了，然后我回去因为这件事，给老板娘爆打了
+                  一顿。并决定下次坚决不去金字塔底部了
+                  <a href='#'>...查看</a>
+                </div>
+              </div>
+
+              <div>
+                <h2>大型野生动物靠近</h2>
+                <div>
+                  我在家里玩电脑，突然有3，4个白色的小动物正在向我这边靠近，我立刻开始警觉起来，然后我走向窗户
+                  偷偷的望着它们，然后，它们从眼前的路上走过去了
+                  <a href='#'>...查看</a>
+                </div>
+              </div>
+            </div>
+
+            <div class='bottom'>
+              <el-pagination
+                layout="prev, pager, next"
+                :total="1000">
+              </el-pagination>
+            </div>
+        </el-col>
+        <el-col :span="8">
+          <div class="block">
+            <img src='headshort.webp'/>
+
+            <ul>
+              <li>你是他的小笨蛋</li>
+              <li>世界即将毁灭</li>
+              <li>他们经常重复造轮子</li>
+              <li>我不想造轮子</li>
+              <li>前端工程师一直在学习新的框架</li>
+              <li>前端框架存在的意义是什么？</li>
+              <li>造轮子是为了证明自己能干那个</li>
+              <li>感觉框架的意义是将重复代码进行封装</li>
+            </ul>
+          </div>
+        </el-col>
+      </el-row>
+    </div>
+</div>
+
+<script>
+    const Main = {};
+    const app = Vue.createApp(Main);
+    app.use(ElementPlus);
+    app.mount("#app");
+</script>
