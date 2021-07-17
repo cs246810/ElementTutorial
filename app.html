@@ -18,9 +18,9 @@
 
     <div class='nav'>
       <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect">
-        <el-menu-item index="1">主页</el-menu-item>
+        <el-menu-item index="1"><b>主页</b></el-menu-item>
         <el-submenu index="2">
-          <template #title>编程</template>
+          <template #title ><b>编程</b></template>
           <el-menu-item index="2-1">Python</el-menu-item>
           <el-menu-item index="2-2">Linux C</el-menu-item>
           <el-submenu index="2-3">
@@ -40,11 +40,11 @@
             <el-menu-item index="2-4-3">微积分</el-menu-item>
           </el-submenu>
         </el-submenu>
-        <el-menu-item index="3">旅游观光</el-menu-item>
-        <el-menu-item index="4">产品</el-menu-item>
+        <el-menu-item index="3"><b>旅游观光</b></el-menu-item>
+        <el-menu-item index="4" ><b>产品</b></el-menu-item>
 
-        <el-menu-item index="5">数据</el-menu-item>
-        <el-menu-item index="6"><a href="https://github.com/cs246810" target="_blank">GitHub</a></el-menu-item>
+        <el-menu-item index="5" ><b>数据</b></el-menu-item>
+        <el-menu-item index="6"><a href="https://github.com/cs246810" target="_blank"><b>GitHub</b></a></el-menu-item>
       </el-menu>
       <div class="line"></div>
     </div>
